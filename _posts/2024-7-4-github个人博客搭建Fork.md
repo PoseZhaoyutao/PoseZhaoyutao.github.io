@@ -2,7 +2,7 @@
 layout:     post
 title:      Github个人博客搭建Fork
 subtitle:   如何快速搭建属于自己的个人博客
-date:       2024-07-04
+date:       2024-07-4
 author:     ZYT
 header-img: img/post-bg-re-vs-ng2.jpg
 catalog: true
