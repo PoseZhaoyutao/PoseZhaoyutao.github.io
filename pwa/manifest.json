@@ -1,14 +1,14 @@
 {
-  "name": "BY Blog",
-  "short_name": "BY Blog",
+  "name": "YT Blog",
+  "short_name": "YT Blog",
   "description": "A personal blog by engineer",
   "icons": [{
-    "src": "icons/pwa_icon_128.png",
-    "sizes": "128x128",
+    "src": "icons/icon-242.png",
+    "sizes": "242x242",
     "type": "image/png"
   }, {
-    "src": "icons/pwa_icon_512.png",
-    "sizes": "512x512",
+    "src": "icons/icon-242.png",
+    "sizes": "242x242",
     "type": "image/png"
   }],
   "background_color": "#fff",
