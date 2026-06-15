@@ -1,53 +1,92 @@
----
-layout: page
-description: "Thinking will not overcome fear but action will."
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PoseZhaoyutao | AI Skills</title>
+  <meta name="description" content="Research tools and agent skills by PoseZhaoyutao.">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">PoseZhaoyutao / Agent Skills</p>
+      <h1>Research-grade workflows for AI collaborators.</h1>
+      <p class="lede">
+        I build agent skills that turn messy research context, experiment artifacts, and product goals
+        into auditable workflows. Public releases are listed here; strategic skills under paper review
+        are marked as forthcoming without disclosing their internal ideas.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/PoseZhaoyutao/research-paper-writer-skill">Research Paper Writer</a>
+        <a class="button secondary" href="https://github.com/PoseZhaoyutao/AgentMaker">AgentMaker</a>
+        <a class="button secondary" href="https://github.com/PoseZhaoyutao">GitHub Profile</a>
+      </div>
+    </section>
 
-<section class="home-skill-feature">
-    <p class="skill-kicker">New Research Tools</p>
-    <h2>AI Skills for research writing and agent collaboration</h2>
-    <p>
-        I am organizing a small portfolio of agent skills, including the public
-        Research Paper Writer skill and several in-progress strategic skills that will be
-        disclosed after the related paper is ready.
-    </p>
-    <a class="skill-button" href="{{ site.baseurl }}/skills.html">Explore AI Skills</a>
-</section>
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+    <section class="grid" aria-label="AI skills">
+      <article class="card highlight">
+        <div class="row">
+          <span class="badge public">Public</span>
+          <span class="meta">Codex Skill</span>
         </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
+        <h2>Research Paper Writer</h2>
+        <p>
+          A research manuscript skill for turning session memory, experiment logs, figures, metrics,
+          prior drafts, and code artifacts into evidence-grounded paper workflows.
+        </p>
+        <ul>
+          <li>Builds an auditable evidence ledger before manuscript claims are used.</li>
+          <li>Requires independent writing, editorial, domain-review, and formatting roles.</li>
+          <li>Supports drafting, revision, review, and submission preparation.</li>
+        </ul>
+        <a class="text-link" href="https://github.com/PoseZhaoyutao/research-paper-writer-skill">View repository</a>
+      </article>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+      <article class="card">
+        <div class="row">
+          <span class="badge public">Public</span>
+          <span class="meta">Agent Delivery</span>
+        </div>
+        <h2>Anyone Can Product Manager</h2>
+        <p>
+          A delivery-loop skill for turning a rough product goal, design direction, and explicit
+          boundaries into a usable artifact through planning, implementation, review, and verification.
+        </p>
+        <a class="text-link" href="https://github.com/PoseZhaoyutao/AgentMaker">View project</a>
+      </article>
+
+      <article class="card locked">
+        <div class="row">
+          <span class="badge pending">Forthcoming</span>
+          <span class="meta">Paper in progress</span>
+        </div>
+        <h2>Anyone Can Be CTO</h2>
+        <p>
+          A strategic AI skill under private research development. Details are withheld until the
+          associated paper and release materials are ready.
+        </p>
+      </article>
+
+      <article class="card locked">
+        <div class="row">
+          <span class="badge pending">Forthcoming</span>
+          <span class="meta">Paper in progress</span>
+        </div>
+        <h2>Anyone Can Be CEO</h2>
+        <p>
+          A strategic AI skill under private research development. Details are withheld until the
+          associated paper and release materials are ready.
+        </p>
+      </article>
+    </section>
+
+    <section class="note">
+      <h2>Disclosure note</h2>
+      <p>
+        CTO and CEO skill details are intentionally not published here while the manuscript is being prepared.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
