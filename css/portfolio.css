@@ -280,6 +280,11 @@ h1 {
   color: var(--oxide);
 }
 
+.badge.engine {
+  background: #17201d;
+  color: #fffefa;
+}
+
 .meta {
   color: #7c8580;
   font-size: 12px;
@@ -310,6 +315,78 @@ h1 {
 .text-link {
   color: var(--blue);
   font-weight: 900;
+}
+
+.engine-feature {
+  background: #fffefa;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 0;
+  grid-template-columns: minmax(260px, 0.68fr) minmax(0, 1.32fr);
+  margin: 0 0 58px;
+  overflow: hidden;
+}
+
+.engine-media {
+  background: #121b18;
+  min-height: 560px;
+  overflow: hidden;
+  position: relative;
+}
+
+.engine-media img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center top;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.engine-copy {
+  align-self: center;
+  padding: clamp(28px, 5vw, 58px);
+}
+
+.engine-copy h2 {
+  font-size: clamp(32px, 5vw, 58px);
+  letter-spacing: 0;
+  line-height: 1.05;
+  margin: 0 0 18px;
+  overflow-wrap: anywhere;
+}
+
+.engine-copy > p:not(.eyebrow):not(.engine-boundary) {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.82;
+}
+
+.engine-points {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 24px 0;
+}
+
+.engine-points span {
+  border-left: 3px solid var(--oxide);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 7px 0 7px 12px;
+}
+
+.engine-boundary {
+  background: #f1eee4;
+  border-radius: 5px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+  padding: 12px 14px;
 }
 
 .project-list {
@@ -362,6 +439,7 @@ h1 {
 
 @media (max-width: 860px) {
   .hero,
+  .engine-feature,
   .feature-grid,
   .compact-grid {
     grid-template-columns: 1fr;
@@ -370,6 +448,11 @@ h1 {
   .section-heading {
     align-items: start;
     flex-direction: column;
+  }
+
+  .engine-media {
+    aspect-ratio: 16 / 10;
+    min-height: 0;
   }
 }
 
@@ -385,6 +468,10 @@ h1 {
   }
 
   .project-row {
+    grid-template-columns: 1fr;
+  }
+
+  .engine-points {
     grid-template-columns: 1fr;
   }
 
