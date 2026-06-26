@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>赵玉涛 | AI 技能与公开项目</title>
-  <meta name="description" content="赵玉涛的公开项目、AI 技能、空间位姿估计与研究工具作品集。">
+  <title>赵玉涛 | 角落星球与 AI 项目</title>
+  <meta name="description" content="赵玉涛的角落星球、AI 技能、空间位姿估计与研究工具作品集。">
   <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
@@ -14,6 +14,7 @@
 
   <main class="page">
     <nav class="topbar" aria-label="站点导航">
+      <a href="#corner-planet">角落星球</a>
       <a href="#zhimian">智面引擎</a>
       <a href="#skills">AI 技能</a>
       <a href="#projects">公开项目</a>
@@ -23,15 +24,16 @@
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">PoseZhaoyutao / 研究作品集</p>
-        <h1>把论文、实验、空间感知与 AI Agent 工作流做成可交付系统。</h1>
+        <h1>从城市角落寻宝，到 AI Agent 工作流：把想法做成可体验的系统。</h1>
         <p class="lede">
-          这里整理我的公开项目：研究论文写作技能、Agent 工作流、空间位姿估计工具、
+          首位展示「角落星球」：一个把城市线索、唯一 ID 实体收藏、扫码认领和地点绑定串起来的探索项目。
+          这里也整理我的公开项目：研究论文写作技能、Agent 工作流、空间位姿估计工具、
           实验记录系统，以及若干公开同步的参考项目。CTO 和 CEO 两个战略技能仍处于论文撰写阶段，
           这里只展示名称和状态。
         </p>
         <div class="actions">
-          <a class="button primary" href="https://github.com/PoseZhaoyutao/research-paper-writer-skill">查看论文写作技能</a>
-          <a class="button secondary" href="#projects">浏览公开项目</a>
+          <a class="button primary" href="https://corner-planet-production.up.railway.app/">进入角落星球</a>
+          <a class="button secondary" href="#corner-planet">查看项目介绍</a>
         </div>
       </div>
       <aside class="hero-panel" aria-label="项目概览">
@@ -52,6 +54,60 @@
           <span class="metric-label">战略技能待公布，论文撰写中</span>
         </div>
       </aside>
+    </section>
+
+    <section id="corner-planet" class="corner-planet-feature">
+      <div class="corner-planet-copy">
+        <div class="card-top">
+          <span class="badge corner">首位项目</span>
+          <span class="meta">Web App / 城市寻宝 / 唯一 ID 收藏</span>
+        </div>
+        <p class="eyebrow">Corner Planet · 城市角落寻宝计划</p>
+        <h2>角落星球：把城市里被忽略的小角落，变成可以被发现、认领和收藏的星球。</h2>
+        <p>
+          这是一个面向真实城市空间的探索产品：用户根据线索去寻找隐藏物件，扫码后在 App 中完成认领，
+          每个实体物件都由后端生成唯一 ID，并与地点、拥有者和流转记录绑定。它不是普通潮玩商城，
+          而是一套从线下发现到线上收藏展示的 MVP 闭环。
+        </p>
+        <div class="corner-planet-tags" aria-label="角落星球核心玩法">
+          <span>城市线索发布</span>
+          <span>线下寻找物件</span>
+          <span>二维码扫码认领</span>
+          <span>后端唯一 ID</span>
+          <span>地点绑定</span>
+          <span>收藏宇宙展示</span>
+        </div>
+        <div class="corner-planet-metrics" aria-label="项目约束">
+          <div>
+            <strong>ID</strong>
+            <span>不可伪造</span>
+          </div>
+          <div>
+            <strong>Place</strong>
+            <span>地点来源可追溯</span>
+          </div>
+          <div>
+            <strong>Loop</strong>
+            <span>发现、认领、收藏闭环</span>
+          </div>
+        </div>
+        <p class="corner-planet-boundary">第一阶段聚焦核心体验：寻宝、扫码、认领、收藏和流转标记；暂不把它做成复杂电商、NFT 或金融化交易平台。</p>
+        <div class="actions">
+          <a class="button primary" href="https://corner-planet-production.up.railway.app/">在线体验</a>
+          <a class="button secondary" href="https://github.com/PoseZhaoyutao">查看更多项目</a>
+        </div>
+      </div>
+      <div class="corner-planet-visual" aria-label="角落星球动画演示封面">
+        <img src="assets/corner-planet-cinematic-hero.png" alt="角落星球城市星空主视觉">
+        <div class="planet-vignette" aria-hidden="true"></div>
+        <div class="planet-orbit orbit-one" aria-hidden="true"></div>
+        <div class="planet-orbit orbit-two" aria-hidden="true"></div>
+        <div class="planet-path" aria-hidden="true"></div>
+        <span class="planet-clue clue-a" aria-hidden="true"></span>
+        <span class="planet-clue clue-b" aria-hidden="true"></span>
+        <span class="planet-clue clue-c" aria-hidden="true"></span>
+        <span class="planet-scan" aria-hidden="true"></span>
+      </div>
     </section>
 
     <section id="zhimian" class="engine-feature">

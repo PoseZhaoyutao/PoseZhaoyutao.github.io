@@ -22,7 +22,7 @@
   /* ---------- 2. Scroll-reveal with stagger ---------- */
   (function () {
     var targets = document.querySelectorAll(
-      ".hero-copy, .hero-panel, .engine-feature, .section-heading, .project-card, .project-row, .compact-grid a, .note"
+      ".hero-copy, .hero-panel, .corner-planet-feature, .engine-feature, .section-heading, .project-card, .project-row, .compact-grid a, .note"
     );
     if (!targets.length) return;
     if (reduce || !("IntersectionObserver" in window)) {
@@ -94,7 +94,7 @@
   /* ---------- 5. Pointer tilt + glow on cards ---------- */
   (function () {
     if (reduce) return;
-    var cards = document.querySelectorAll(".project-card, .compact-grid a, .engine-feature, .hero-panel");
+    var cards = document.querySelectorAll(".project-card, .compact-grid a, .corner-planet-feature, .engine-feature, .hero-panel");
     cards.forEach(function (card) {
       card.classList.add("tilt");
       card.addEventListener("pointermove", function (ev) {
